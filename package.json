@@ -3,9 +3,24 @@
   "version": "1.0.0",
   "description": "Cool places ahead",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "",
-  "license": "ISC"
+  
+"scripts": {
+  "start": "cd server && npm start",
+  "heroku-postbuild": "cd client && npm install && npm run build && cd ../server && npm install"
+  
+},
+"cache directories": [
+  "client/node_modules",
+  "server/node_modules"
+],
+"repository": {
+  "type": "git",
+  "url": "git+https://github.com/8090ofree/roadtripx.git"
+},
+"author": "Gal Yishlah",
+"license": "ISC",
+"bugs": {
+  "url": "https://github.com/8090ofree/roadtripx/issues"
+},
+"homepage": "https://github.com/8090ofree/roadtripx#readme"
 }

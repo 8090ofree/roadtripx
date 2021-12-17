@@ -263,7 +263,7 @@ function validateEmail(email) {
     
   
     if (!passwordToken || !password) {
-      console.log('failer, invalid details, ', passwordToken, password)
+      console.log('failed, invalid details, ', passwordToken, password)
       res.status(422).send(invalidDetails);
       return;
     }
